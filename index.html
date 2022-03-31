@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+      <!--Bloco Cadastro-->
+    <div class="bloco">
+
+        <img src="Imagens/pet.png" alt="ImagensPet">
+          <!--Header-->
         <h1>Cadastrar Pet</h1>
-    </div>
-
+     <!--Formulário-->
     <form>
-
-        <div>
-            <input type="text">
-            <input type="number">
+               <!--Name e Idade-->
+        <div class="nomeidade">
+            <input type="text" placeholder="Nome do Pet" class="nome">
+            <input type="number" placeholder="Idade" class="idade">
         </div>
-
-        <input type="email">
-
+               <!--Email-->
+        <input type="email" placeholder="Email do Responsável">
+               <!--Selecionar Espécie-->
         <p>Espécie</p>
 
-        <div>
+        <div class="radio">
             <span>
                 <input type="radio" id="canino" name="especie">
                 <label for="canino">Canino</label>
@@ -35,10 +38,10 @@
             </span>
         
         </div>
-
+                 <!--Selecionar Porte-->
         <p>Porte</p>
 
-        <div>
+        <div class="radio">
             <span>
                 <input type="radio" id="pequeno" name="porte">
                 <label for="pequeno">Pequeno</label>
@@ -54,10 +57,11 @@
                 <label for="grande">Grande</label>
             </span>
         </div>
-
+                <!--Botão-->
         <button>Cadastrar</button>
-
+    
     </form>
+</div>
 
     
 </body>
